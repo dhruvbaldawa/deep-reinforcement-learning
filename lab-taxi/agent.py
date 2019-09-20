@@ -19,12 +19,10 @@ def epsilon_greedy(Q, state, nA, eps):
         return random.choice(np.arange(nA))
 
 
-def update_Q_expsarsa(alpha, gamma, nA, eps, Q, state, action, reward, next_state=None):
+def update_q(alpha, gamma, nA, eps, Q, state, action, reward, next_state=None):
     """Returns updated Q-value for the most recent experience."""
     current = Q[state][action]         # estimate in Q-table (for current state, action pair)
-    policy_s = np.ones(nA) * eps / nA  # current policy (for next state S')
-    policy_s[np.argmax(Q[next_state])] = 1 - eps + (eps / nA) # greedy action
-    Qsa_next = np.dot(Q[next_state], policy_s)         # get value of state at next time step
+    Qsa_next = np.max(Q[next_state])
     target = reward + (gamma * Qsa_next)               # construct target
     new_value = current + (alpha * (target - current)) # get updated value
     return new_value
@@ -41,7 +39,7 @@ class Agent:
         """
         self.nA = nA
         self.Q = defaultdict(lambda: np.zeros(self.nA))
-        self.epsilon = 0.999
+        self.epsilon = 1.0
 
     def select_action(self, state):
         """ Given the state, select an action.
@@ -67,9 +65,7 @@ class Agent:
         - next_state: the current state of the environment
         - done: whether the episode is complete (True or False)
         """
-        alpha = 1.0
-        gamma = 1.0
-        action = epsilon_greedy(self.Q, state, self.nA, self.epsilon)         # epsilon-greedy action selection
+        alpha = 0.07
+        gamma = 0.8
         # update Q
-        self.Q[state][action] = update_Q_expsarsa(alpha, gamma, self.nA, self.epsilon, self.Q, state, action, reward, next_state)
-        self.epsilon = max(self.epsilon ** 3, 0.0001)
+        self.Q[state][action] = update_q(alpha, gamma, self.nA, self.epsilon, self.Q, state, action, reward, next_state)
