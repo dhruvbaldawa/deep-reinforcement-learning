@@ -14,6 +14,7 @@ class QNetwork(nn.Module):
             state_size (int): Dimension of each state
             action_size (int): Dimension of each action
             seed (int): Random seed
+            hidden_layers(tuple): Tuple of hidden layers in the neural network
         """
         super(QNetwork, self).__init__()
         self.seed = torch.manual_seed(seed)
