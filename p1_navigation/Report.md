@@ -24,7 +24,7 @@ The algorithm implemented for learning is a Deep Q Learning algorithm which uses
  - Fixed Q-targets
  - Experience replays
 
-It is a policy-based estimation model which tries to evaluate the optimal action policy to maximize the discounted
+It is a value-based estimation model which tries to evaluate the optimal action policy to maximize the discounted
 , cumulative reward.
 
 ### Methods applied
