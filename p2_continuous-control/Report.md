@@ -94,9 +94,9 @@ NOISE_SIGMA = 0.2
 
 We were able to solve the **Option 2** of the environment and reach an average of +30 over 100 episodes (over 20 agents) in **219 episodes**
 
-![rewards.png]
+![Rewards](rewards.png)
 
-![agents-in-action.gif]
+![Agents in action](agents-in-action.gif)
 
 ## Future Work
 - As mentioned in [Gabriel Barth-Maron, Matthew W. Hoffman, 2018](https://openreview.net/pdf?id=SyZipzbCb) using D4PG and combining the current implementation with a Prioritized Experience Replay buffer can help increase the performance of the model.

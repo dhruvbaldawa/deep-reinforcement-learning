@@ -4,7 +4,7 @@
 
 For this project, you will work with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
 
-![agents-in-action.png][image1]
+![Agents in action](agents-in-action.gif)
 
 In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
 
@@ -99,3 +99,5 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 Follow the instructions in `Continuous_Control.ipynb` to get started with training your own agent!  
 
 ### Agent in action
+
+![Agents in action](agents-in-action.gif)
