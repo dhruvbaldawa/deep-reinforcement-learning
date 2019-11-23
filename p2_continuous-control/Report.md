@@ -96,6 +96,8 @@ We were able to solve the **Option 2** of the environment and reach an average o
 
 ![rewards.png]
 
+![agents-in-action.gif]
+
 ## Future Work
 - As mentioned in [Gabriel Barth-Maron, Matthew W. Hoffman, 2018](https://openreview.net/pdf?id=SyZipzbCb) using D4PG and combining the current implementation with a Prioritized Experience Replay buffer can help increase the performance of the model.
 
