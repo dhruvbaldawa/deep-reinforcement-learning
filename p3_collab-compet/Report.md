@@ -27,9 +27,9 @@ The Deep Deterministic Policy Gradient (DDPG) strategy is used in this solution.
 
 ##### Actor network configuration
 * Input layer (number of states = 24 nodes) - batch normalized
-* Leaky ReLU Layer
+* ReLU activation Layer
 * Fully-connected layer (256 nodes)
-* Leaky ReLU Layer
+* ReLU activation Layer
 * Fully-connected layer (256 nodes)
 * Output Layer (number of actions = 2 nodes)
 
@@ -100,6 +100,6 @@ We were able to solve this environment and reach an average of +0.5 over 100 epi
 
 ## References
 - [Timothy P. Lillicrap, Jonathan J. Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, Daan Wierstra; Continuous control with deep reinforcement learning, 2015](https://arxiv.org/abs/1509.02971)
-- [Gabriel Barth-Maron˚, Matthew W. Hoffman˚, David Budden, Will Dabney,
-Dan Horgan, Dhruva TB, Alistair Muldal, Nicolas Heess, Timothy Lillicrap; Distributed Distributional Deterministic Policy Gradients, 2018](https://openreview.net/pdf?id=SyZipzbCb)
+- [Gabriel Barth-Maron˚, Matthew W. Hoffman˚, David Budden, Will Dabney, Dan Horgan, Dhruva TB, Alistair Muldal, Nicolas Heess, Timothy Lillicrap; Distributed Distributional Deterministic Policy Gradients, 2018](https://openreview.net/pdf?id=SyZipzbCb)
 - [Yan Duan, Xi Chen, Rein Houthooft, John Schulman, Pieter Abbeel; Benchmarking Deep Reinforcement Learning for Continuous Control, 2015](https://arxiv.org/abs/1604.06778)
+- [Tom Schaul, John Quan, Ioannis Antonoglou, David Silver; Prioritized Experience Replay, 2015](https://arxiv.org/abs/1511.05952)

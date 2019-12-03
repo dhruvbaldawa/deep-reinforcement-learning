@@ -1,8 +1,4 @@
-[//]: # (Image References)
-
-[image2]: https://user-images.githubusercontent.com/10624937/42135622-e55fb586-7d12-11e8-8a54-3c31da15a90a.gif "Soccer"
-
-# Project 3: Collaboration and Competition
+    # Project 3: Collaboration and Competition
 
 ### Introduction
 
@@ -70,8 +66,6 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 ```
 
 5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu.
-
-![Kernel][image2]
 
 ### Instructions
 
