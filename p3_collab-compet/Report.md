@@ -98,6 +98,14 @@ We were able to solve this environment and reach an average of +0.5 over 100 epi
 
 ![Agents in action](tennis-in-action-2.gif)
 
+## Future Work
+
+We can apply other algorithms like [Proximal Policy Optimization (PPO)](https://arxiv.org/pdf/1707.06347.pdf) to this environment.
+
+When I was working on the hyperparameters, the noise and prioritized experience replay parameters had a huge effect in the performance and training time for the algorithm. I am sure tweaking the neural network configuration and some hyperparameters can enhance the performance of the network.
+
+It would also be interesting to see how the algorithm will change, if the players were playing against eachother and how would the agent implementation change for that environment.
+
 ## References
 - [Timothy P. Lillicrap, Jonathan J. Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, Daan Wierstra; Continuous control with deep reinforcement learning, 2015](https://arxiv.org/abs/1509.02971)
 - [Gabriel Barth-Maron˚, Matthew W. Hoffman˚, David Budden, Will Dabney, Dan Horgan, Dhruva TB, Alistair Muldal, Nicolas Heess, Timothy Lillicrap; Distributed Distributional Deterministic Policy Gradients, 2018](https://openreview.net/pdf?id=SyZipzbCb)
